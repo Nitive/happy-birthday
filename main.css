@@ -1,0 +1,24 @@
+@keyframes blink {
+  from, 50% {
+    opacity: 0;
+  }
+  51%, to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: #000;
+  color: #0f0;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.wrapper {
+  margin-left: 50px;
+}
+
+#text:after {
+  content: '|';
+  animation: blink 1.2s infinite;
+}
